@@ -1,0 +1,16 @@
+
+<h2>edit the REVIEW</h2>
+
+{{movie.reviews}}
+
+<form action="/movies/{{theMovie._id}}/reviews/edit" method="post">
+
+    <label for="reviewer">who you are</label>
+    <input type="text" name="reviewer" id="reviewer" value="{{this.reviewer}}">
+
+    <label> what do you have to say</label>
+    <textarea name="content" cols="30" rows="10" value="{{this.content}}"></textarea>
+
+    <button type="submit">Send it!</button>
+
+</form>

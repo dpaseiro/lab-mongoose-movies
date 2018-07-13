@@ -1,0 +1,15 @@
+<h1>hi review</h1>
+
+{{theMovie.title}}
+
+<form action="/movies/{{theMovie._id}}/reviews/create" method="post">
+
+    <label for="reviewer">who you are</label>
+    <input type="text" name="reviewer" id="reviewer">
+
+    <label> what do you have to say</label>
+    <textarea name="content" cols="30" rows="10"></textarea>
+
+    <button type="submit">Send it!</button>
+
+</form>
